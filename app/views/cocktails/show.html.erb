@@ -1,10 +1,16 @@
 <div class="container">
 <h2><%= @cocktail.name %></h2>
 
-<ul>
+<ul class="list-group">
   <% @cocktail.doses.each do |dose| %>
-  <li>
-    <p><%= @cocktail.ingredients.name %> - <%= dose.description %></p>
+  <li class="list-group-item">
+     <div class="d-flex">
+      <%= dose.ingredient.name %> - <%= dose.description %>
+     </div>
+     <!--<%= link_to 'Delete',
+              cocktail_doses_path(@cocktail),
+              method: :delete,
+              data: { confirm: "Are you sure?" }, class: 'text-danger' %>-->
   </li>
   <% end %>
 </ul>

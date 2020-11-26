@@ -1,5 +1,5 @@
 class CocktailsController < ApplicationController
-  before_action :find_cocktail, except: [:index, :new, :create, :search]
+  before_action :find_cocktail, except: [:index, :new, :create, :search, :destroy]
   def index
       @cocktails = Cocktail.search(params[:search])
   end
