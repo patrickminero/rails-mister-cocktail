@@ -13,7 +13,7 @@
 
   <body>
     <nav class="navbar navbar-light bg-light d-flex">
-        <a class="navbar-brand" href="/cocktails">Mister Cocktail</a>
+        <a class="navbar-brand" href="/">Mister Cocktail</a>
       <div class="d-flex">
         <%= form_tag(cocktails_path, method: :get, class: 'd-flex') do %>
           <%= text_field_tag(:search, params[:search], class: 'form-control') %>

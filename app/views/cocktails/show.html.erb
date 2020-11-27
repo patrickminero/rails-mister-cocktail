@@ -7,10 +7,10 @@
      <div class="d-flex">
       <%= dose.ingredient.name %> - <%= dose.description %>
      </div>
-     <!--<%= link_to 'Delete',
-              cocktail_doses_path(@cocktail),
+     <%= link_to 'Delete',
+              dose_path(dose),
               method: :delete,
-              data: { confirm: "Are you sure?" }, class: 'text-danger' %>-->
+              data: { confirm: "Are you sure?" }, class: 'text-danger' %>
   </li>
   <% end %>
 </ul>
